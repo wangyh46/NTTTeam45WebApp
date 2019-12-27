@@ -1,0 +1,15 @@
+.text-japanese-indigo {
+    color: #274060;
+  }
+  
+  a.text-japanese-indigo:hover, a.text-japanese-indigo:focus {
+    color: #1f324c;
+  }
+  
+  .text-pastel-blue {
+    color: #cee5f2;
+  }
+  
+  a.text-pastel-blue:hover, a.text-pastel-blue:focus {
+    color: #adc0cc;
+  }
