@@ -11,10 +11,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-# import json
-
-# with open('/etc/config.json') as config_file:
-#     config = json.load(config_file)
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,15 +19,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = config['SECRET_KEY']
 SECRET_KEY = 'y+oee&-miw(q&jh%xt_89t)t!-lt@q)&a@+ji6qfh$x6)v*o%s'
 
-
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
-
+ALLOWED_HOSTS = ['.azurewebsites.net', 'https://uclteam45.azurewebsites.net']
 
 # Application definition
 
@@ -126,7 +119,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
@@ -151,6 +144,3 @@ EMAIL_HOST_PASSWORD = 'RagLibYuh45'
 #dedicated purpose
 # EMAIL_HOST_USER = os.environ.get('GM_USER')
 # EMAIL_HOST_PASSWORD = os.environ.get('GM_PASS')
-
-# EMAIL_HOST_USER = config.get['EMAIL_USER']
-# EMAIL_HOST_PASSWORD = config.get['EMAIL_PASS']
